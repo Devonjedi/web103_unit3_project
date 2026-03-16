@@ -49,9 +49,32 @@
 }
 
 .negative-time-remaining {
-    background-color: red;
+    background-color: #8b0000;
     color: white;
     font-weight: 700;
-    padding: 10px;
-    text-align: center;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 0.85em;
+}
+
+.negative-time-remaining i {
+    margin-right: 6px;
+}
+
+.time-remaining {
+    color: var(--accent-color);
+    font-size: 0.85em;
+}
+
+.time-remaining i {
+    margin-right: 6px;
+}
+
+.event-past {
+    opacity: 0.75;
+    border-color: #555 !important;
+}
+
+.event-past .event-information-overlay {
+    background-color: #3a1010;
 }

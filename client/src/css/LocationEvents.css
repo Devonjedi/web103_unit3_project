@@ -37,3 +37,41 @@
 .location-events main i {
     margin-right: 10px;
 }
+
+.location-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.location-info h2 {
+    font-size: 1.8em;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.location-description {
+    color: rgba(255,255,255,0.75);
+    font-size: 0.9em;
+    margin-top: 8px !important;
+    max-width: 500px;
+}
+
+.back-btn {
+    background: none;
+    border: 1px solid rgba(255,255,255,0.4);
+    color: rgba(255,255,255,0.8);
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85em;
+    margin-bottom: 12px;
+    width: fit-content;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.back-btn:hover {
+    border-color: white;
+    color: white;
+}

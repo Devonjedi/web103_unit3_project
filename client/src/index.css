@@ -1,72 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:wght@400;700;800&display=swap');
 
 #root {
-    background: url('./assets/unitygrid.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    background-color: var(--secondary-color);
-    font-family: Nunito Sans, Verdana, sans-serif;
-    height: 100vh;
-    --main-color: rgb(217, 29, 242);
-    --secondary-color: rgb(3, 1, 64);
+    background-color: #1a0f0a;
+    font-family: 'Nunito Sans', Verdana, sans-serif;
+    min-height: 100vh;
+    --main-color: #6f3b1e;
+    --secondary-color: #2c1810;
+    --accent-color: #c9a882;
+    --background: #1a0f0a;
+    --surface: #2c1810;
     --primary: var(--main-color);
-    --primary-hover: rgb(111, 28, 166);
-    --primary-focus: rgb(217, 29, 242);
+    --primary-hover: #8b4e2a;
+    --primary-focus: #c9a882;
     --secondary: var(--secondary-color);
-    --secondary-hover: rgb(4, 66, 191);
-    --secondary-focus: rgb(111, 28, 166);
-    --h1-color: white;
-    --h2-color: white;
-    --h3-color: white;
+    --secondary-hover: #3d2418;
+    --secondary-focus: #6f3b1e;
+    --h1-color: #c9a882;
+    --h2-color: #f5e6d3;
+    --h3-color: #f5e6d3;
+    --text-color: #f5e6d3;
+    --text-muted: #c9a882;
     --card-background-color: none;
-    --form-element-background-color: white;
+    --form-element-background-color: #3d2418;
     --form-element-border-color: var(--main-color);
-    --form-element-color: black;
-    --form-element-placeholder-color: black;
-    --form-element-active-border-color: var(--secondary-color);
-    --form-element-active-background-color: white;
+    --form-element-color: #f5e6d3;
+    --form-element-placeholder-color: #c9a882;
+    --form-element-active-border-color: var(--accent-color);
+    --form-element-active-background-color: #3d2418;
 }
 
 #root h1, #root h2, #root h3 {
-    text-transform: uppercase;
     margin-bottom: 0px;
 }
 
 #root h1 {
-    font-family: Rock Salt, cursive;
-    font-size: 3em;
-    font-weight: bold;
-    text-shadow: 3px 3px 4px black;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2em;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--accent-color);
 }
 
 #root h2 {
-    font-family: Nunito Sans, Verdana, sans-serif;
-    font-size: 2em;
-    font-weight: 800;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.6em;
+    font-weight: 700;
+    color: var(--h2-color);
 }
 
 #root h3 {
-    font-family: Nunito Sans, Verdana, sans-serif;
-    font-size: 1.3em;
+    font-family: 'Nunito Sans', Verdana, sans-serif;
+    font-size: 1.1em;
     font-weight: 800;
-}
-
-#root main {
-    display: flex;
-    justify-content: center;
+    color: var(--h3-color);
 }
 
 #root [role=button] {
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 1.5em;
-    border: 2px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-weight: 700;
+    font-size: 0.95em;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 18px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+#root [role=button]:hover {
+    background-color: var(--primary-hover);
 }
 
 #root article {
@@ -74,5 +76,12 @@
 }
 
 #root select {
-    width: 400px;
+    width: auto;
+}
+
+.loading {
+    text-align: center;
+    padding: 60px;
+    color: var(--text-muted);
+    font-style: italic;
 }
