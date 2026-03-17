@@ -133,7 +133,7 @@ const createTables = async () => {
             title: 'Single Origin Cupping',
             date: '2026-03-28',
             time: '10:00:00',
-            image: 'https://images.unsplash.com/photo-1446671756826-c5eca1025c74?w=800&auto=format&fit=crop',
+            image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&fit=crop',
             description: 'A guided cupping session exploring coffees from three continents. No experience needed!',
             location_id: 2
         },
